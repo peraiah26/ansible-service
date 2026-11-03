@@ -5,5 +5,4 @@
   - name: python package
     ansible.builtin.package:
       name: python
-      state: started
-      
+      state: present
