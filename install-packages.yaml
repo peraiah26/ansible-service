@@ -1,0 +1,8 @@
+- name: install the packages
+  hosts: local
+  become: yes
+  tasks:
+  - name: install python
+    ansible.builtin.package:
+      name: python
+      state: present
