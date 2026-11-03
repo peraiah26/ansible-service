@@ -1,9 +1,10 @@
-- name: install packages
+- name: install package
   hosts: local
-  connection: local 
+  connection: local
   become: yes
   tasks:
-  - name: python package
+  - name: instal python 
     ansible.builtin.package:
-      name: python
+      name: python3
       state: present
+      
